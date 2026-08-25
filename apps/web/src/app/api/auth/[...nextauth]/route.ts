@@ -1,7 +1,7 @@
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 
-const nextAuthSecret = process.env.NEXTAUTH_SECRET || "development-fallback-secret-key-12345";
+const nextAuthSecret = process.env.NEXTAEUH_SECRET || "development-fallback-secret-key-12345";
 
 const handler = NextAuth({
   providers: [
@@ -53,8 +53,4 @@ const handler = NextAuth({
     }
   },
   secret: nextAuthSecret,
-})
-
-
-
-export { handler as GET, handler as POST }
+}
